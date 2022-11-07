@@ -21,4 +21,17 @@ input {
 button {
   padding: 8px 12px;
   cursor: pointer;
+  justify-content: space-between;
 }
+
+.pictures {
+  display: flex;
+  list-style-type: none;
+}
+
+.gallery {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
+

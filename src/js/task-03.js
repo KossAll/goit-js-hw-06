@@ -12,3 +12,21 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const imegesItem = addressPicture => {
+  const { url, alt } = addressPicture
+  return `
+  <li class="pictures">
+   <img src="${addressPicture.url}" alt="${addressPicture.alt}" width="320">
+  </li>`
+};
+
+const galleryImages = document.querySelector(`.gallery`)
+
+const gallerySplitRows = images.map(imegesItem).join(``);
+galleryImages.insertAdjacentHTML(`beforeend`, gallerySplitRows);
+
+
+
+
+  
